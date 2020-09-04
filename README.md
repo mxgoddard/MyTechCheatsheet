@@ -6,8 +6,8 @@ Compilation of the notes I've made, for all the tech (loose term) I've come acro
 
 1. [Programming Languages](#programminglanguages)
     1. [JavaScript](#javascript)
-        1. [Packages](#packages)
-            1. [Gulp](#gulp)
+        1. [Gulp](#gulp)
+        2. [Ulify](#uglify)
 
 # Programming Languages <a name="programminglanguages"></a>
 
@@ -17,13 +17,18 @@ Dummy data to check contents works.
 
 This is the sub paragraph of Abc.
 
-### Packages
+### Gulp.js
 
-tbd
+[Gulp Website](https://gulpjs.com/)
 
-#### Gulp
+Gulp.js is a toolkit for JavaScript that allows you to automate repetive workflows into a more efficient build pipeline. I've mainly seen it used to minify code (using [Uglify.js](#uglify)) when the project compiles.
 
-Gulp tbd
+### Uglify.js
+
+[Uglify Page](https://www.npmjs.com/package/uglify-js)
+
+- A package for minifying code (The names uglify and minify are synonymous).
+- Only supports ECMAScript 5 (ES5, 2011). For ES6 (2015) and more recent (up to ES11 in 2020), use [Babel](https://babeljs.io/).
 
 ## Ideas
 
@@ -31,6 +36,11 @@ Gulp tbd
 - Bla
 - Blaa
 - Blaaa
+
+## Notes
+
+- Make sure information is relevant and not unecessary (anecdotes).
+- Don't need to list absolutely everything, but information that is helpful for me.
 
 ## Checklist for this page
 
