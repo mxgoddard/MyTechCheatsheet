@@ -61,9 +61,10 @@ gulp.task("myGulpMethod", function () {
 });
 ```
 
+Manually running the gulp task in the directory containing the gulpfile.
+
 ```bash
-# Manually running the gulp task
-> gulp myGulpMethod
+WORKING_DIRECTORY> gulp myGulpMethod
     ReferenceError: primordials is not defined.
 ```
 
