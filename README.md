@@ -26,9 +26,7 @@ Typically this will remove all whitespace and change all variable names to singl
 
 ## JavaScript <a name="javascript"></a>
 
-### Gulp.js <a name="gulp"></a>
-
-[Gulp Page](https://gulpjs.com/)
+### [Gulp.js](https://gulpjs.com/) <a name="gulp"></a>
 
 Gulp.js is a toolkit for JavaScript that allows you to automate repetive workflows into a more efficient build pipeline. I've mainly seen it used to minify code (using [Uglify.js](#uglify)) when the project compiles.
 
