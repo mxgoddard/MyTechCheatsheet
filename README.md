@@ -49,16 +49,15 @@ When used, Modernizr runs some quick tests when your web page loads to see which
 
 Markdown (.md) is a markup language mainly used for formatting documentation and README files such as this one. 
 
-Interestingly HTML stands for Hypertext Markup Language used to design documents in a web browser.
+Remembering HTML stands for Hypertext Markup Language and is used to design (format) documents in a web browser helped connect some dots for me.
 
 Using a block of triple backtick (`) characters we can create a code block where we can specify the language used for syntax highlighting. Rubycoloredglasses has a nice list of the available languages [here](http://www.rubycoloredglasses.com/2013/04/languages-supported-by-github-flavored-markdown/).
 
-```javascript
-    ```javascript
-    // Classic hello world
-    let text = 'Hello, World!';
-    console.log(text);
-    ```
+``` markdown
+``` javascript
+let text = 'Hello, World!';
+console.log(text);
+```
 ```
 
 # Software <a name="software"></a>
