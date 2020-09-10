@@ -11,8 +11,10 @@ Compilation of some notes I've made, for all the tech stuff I want to come back 
         2. [Ulify](#uglify)
         3. [Jasmin](#jasmine)
         4. [Modernizr](#modernizr)
+    2. [Markdown](#markdown)
 3. [Software](#software)
     1. [NVM](#nvm)
+    2. [Webpack](#webpack)
 
 # Terminology <a name="terminology"></a>
 
@@ -35,13 +37,27 @@ Gulp.js is a toolkit for JavaScript that allows you to automate repetive workflo
 - A package for minifying code (The names uglify and minify are synonymous).
 - Only supports ECMAScript 5 (ES5, 2011). For ES6 (2015) and more recent (up to ES11 in 2020), use [Babel](https://babeljs.io/).
 
-### [Jasmine Page](https://jasmine.github.io/) <a name="jasmine"></a>
+### [Jasmine](https://jasmine.github.io/) <a name="jasmine"></a>
 
 Jasmine is a behaviour driven, open-source testing framework that aims to run on any JavaScript enabled platform non-intrusively.
 
-### [Modernizr Page](https://modernizr.com/) <a name="modernizr"></a>
+### [Modernizr](https://modernizr.com/) <a name="modernizr"></a>
 
 When used, Modernizr runs some quick tests when your web page loads to see which features the current users browser can run.
+
+## [Markdown](https://en.wikipedia.org/wiki/Markdown) <a name="markdown"></a>
+
+Markdown (.md) is a markup language mainly used for formatting documentation and README files such as this one. 
+
+Interestingly HTML stands for Hypertext Markup Language used to design documents in a web browser.
+
+Using a block of triple backtick (`) characters we can create a code block where we can specify the language used for syntax highlighting. Rubycoloredglasses has a nice list of the available languages [here](http://www.rubycoloredglasses.com/2013/04/languages-supported-by-github-flavored-markdown/).
+
+```javascript
+// Classic hello world
+let text = 'Hello, World!';
+console.log(text);
+```
 
 # Software <a name="software"></a>
 
@@ -76,7 +92,7 @@ This when run in the console gives the error above. So using NVM, this is how I 
 > nvm install 8.11.1
 > nvm use 8.11.1
 # Check we are on the correct version of node now
-> nmv list
+> nvm list
 # Navigate to working directory containing the gulpfile.js
 > cd WORKING_DIRECTORY
 # Run the gulp method
@@ -85,9 +101,13 @@ WORKING_DIRECTORY> gulp myGulpMethod
 
 Now the gulp task works completely as expected.
 
+## [Webpack](https://webpack.js.org/) <a name="webpack"></a>
+
+Bundle code modules with dependencies into static assets that can be called from html script tags.
+
 ## Checklist for this page
 
 - [x] Make a contents page
 - [x] Add Gulp for an intial commit
 - [x] Work out how to manage and split out this page (hierarchy)
-- [x] Dummy point
+- [ ] Add Git section
