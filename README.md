@@ -58,7 +58,6 @@ Using a block of triple backtick (`) characters we can create a code block where
 let text = 'Hello, World!';
 console.log(text);
 ```
-```
 
 # Software <a name="software"></a>
 
