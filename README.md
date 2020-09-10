@@ -6,6 +6,7 @@ Compilation of some notes I've made, for all the tech stuff I want to come back 
 1. [Terminology](#terminology)
     1. [Minify](#minify)
     2. [Source Maps](#sourcemaps)
+    3. [Asynchronous](#async)
 2. [Programming Languages](#programminglanguages)
     1. [JavaScript](#javascript)
         1. [Gulp](#gulp)
@@ -23,13 +24,29 @@ Compilation of some notes I've made, for all the tech stuff I want to come back 
 
 "Minification is the process of removing all unnecessary characters from the source code of interpreted programming languages or markup languages without changing its functionality."
 
-Typically this will remove all whitespace and change all variable names to single characters where possible. If you had a file called xyz.js and decided to minify it, it would typically be renamed to xyz.min.js. 
+Typically this will remove all whitespace and change all variable names to single characters where possible. If you had a file called xyz.js and decided to minify it, it would typically be renamed to xyz.min.js.
 
 ## Source Maps <a name="sourcemaps"></a>
 
 [This link](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) was extremely useful.
 
-A source map is basically a way to map a minfied / compiled file back to its unbuilt state. When you build and get ready to release to production, files are minified and compiled for performance. Using developers tools such as chrome, with source mapping you can view minified files in their original source code form. 
+A source map is basically a way to map a minfied / compiled file back to its unbuilt state. When you build and get ready to release to production, files are minified and compiled for performance. Using developers tools such as chrome, with source mapping you can view minified files in their original source code form.
+
+## Asynchronous Programming <a name="async"></a>
+
+Async (asynchronous) communication is the transmission of data intermittently rather than in a reliable predictable time frame.
+
+Sources of async:
+
+- Network I/O 
+    - Making HTTP requests (e.g. GET or POST methods)
+- Disk I/O
+    - Reading or writing to a local file on a physical medium (e.g. A .txt file on your C: drive)
+- User interaction
+    - Waiting for user response
+- Interprocess communication
+    - Web workers
+        - Web workers perform tasks in the background of the browser to avoid the UI freezing running
 
 # Programming Languages <a name="programminglanguages"></a>
 
@@ -54,7 +71,7 @@ When used, Modernizr runs some quick tests when your web page loads to see which
 
 ## [Markdown](https://en.wikipedia.org/wiki/Markdown) <a name="markdown"></a>
 
-Markdown (.md) is a markup language mainly used for formatting documentation and README files such as this one. 
+Markdown (.md) is a markup language mainly used for formatting documentation and README files such as this one.
 
 Remembering HTML stands for Hypertext Markup Language and is used to design (format) documents in a web browser helped connect some dots for me.
 
@@ -119,3 +136,4 @@ Bundle code modules with dependencies into static assets that can be called from
 - [x] Work out how to manage and split out this page (hierarchy)
 - [ ] Git
 - [x] Source Maps
+- [ ] Async
