@@ -54,9 +54,11 @@ Interestingly HTML stands for Hypertext Markup Language used to design documents
 Using a block of triple backtick (`) characters we can create a code block where we can specify the language used for syntax highlighting. Rubycoloredglasses has a nice list of the available languages [here](http://www.rubycoloredglasses.com/2013/04/languages-supported-by-github-flavored-markdown/).
 
 ```javascript
-// Classic hello world
-let text = 'Hello, World!';
-console.log(text);
+    ```javascript
+    // Classic hello world
+    let text = 'Hello, World!';
+    console.log(text);
+    ```
 ```
 
 # Software <a name="software"></a>
