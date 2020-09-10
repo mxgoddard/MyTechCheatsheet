@@ -17,6 +17,8 @@ Compilation of some notes I've made, for all the tech stuff I want to come back 
 3. [Software](#software)
     1. [NVM](#nvm)
     2. [Webpack](#webpack)
+4. [Code Snippets](#snippets)
+    1. [Remove files in a folder](#rmfilesdir)
 
 # Terminology <a name="terminology"></a>
 
@@ -129,6 +131,57 @@ Now the gulp task works completely as expected.
 
 Bundle code modules with dependencies into static assets that can be called from html script tags.
 
+# Code Snippets <a name="snippets"></a>
+
+You can either paste these snippets into raw files or export them as methods and use them that way. Generally, using JavaScript, I'll write the code into the file (e.g. HelloWorld.js) and run it with Node.
+
+``` javascript
+/* HelloWorld.js */
+console.log('Hello, World!');
+```
+
+``` bash
+# ls (unix) or dir (windows) to list files in directory 
+> ls
+    HelloWorld.js
+
+> node HelloWorld.js
+    Hello, World!
+```
+
+## Remove files in a folder <a name="rmfilesdir"></a>
+
+JavaScript script to programatically remove files in a directory. Can be conditional to specific file types.
+
+``` javascript
+const fs = require('fs');
+const path = require('path');
+
+// The directory you want to purge
+const directory = 'C:/Users/your_name/somewhere';
+
+// Remove all png files
+const extension = '.png';
+
+fs.readdir(directory, (err, files) => {
+    if (err) {
+        console.log(err);
+        throw err;
+    }
+
+    for (let file of files) {
+        if (file.includes(extension)) {
+            fs.unlink(path.join(directory, file), err => {
+                if (err) {
+                    console.log(err);
+                    throw err;
+                }
+            });
+        }
+    }
+});
+```
+
 ## Checklist for this page
 
 - [x] Make a contents page
@@ -136,4 +189,4 @@ Bundle code modules with dependencies into static assets that can be called from
 - [x] Work out how to manage and split out this page (hierarchy)
 - [ ] Git
 - [x] Source Maps
-- [ ] Async
+- [x] Async
