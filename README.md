@@ -1,10 +1,11 @@
 # My Tech Cheatsheet
 
-Compilation of some notes I've made, for all the tech stuff I want to come back to.
+Compilation of some notes I've made, for all the tech stuff I want to come back to. Trying to connect all the dots one thing at a time.
 
 ## Table of Contents
 1. [Terminology](#terminology)
     1. [Minify](#minify)
+    2. [Source Maps](#sourcemaps)
 2. [Programming Languages](#programminglanguages)
     1. [JavaScript](#javascript)
         1. [Gulp](#gulp)
@@ -23,6 +24,12 @@ Compilation of some notes I've made, for all the tech stuff I want to come back 
 "Minification is the process of removing all unnecessary characters from the source code of interpreted programming languages or markup languages without changing its functionality."
 
 Typically this will remove all whitespace and change all variable names to single characters where possible. If you had a file called xyz.js and decided to minify it, it would typically be renamed to xyz.min.js. 
+
+## Source Maps <a name="sourcemaps"></a>
+
+[This link](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) was extremely useful.
+
+A source map is basically a way to map a minfied / compiled file back to its unbuilt state. When you build and get ready to release to production, files are minified and compiled for performance. Using developers tools such as chrome, with source mapping you can view minified files in their original source code form. 
 
 # Programming Languages <a name="programminglanguages"></a>
 
@@ -67,7 +74,7 @@ I came across NVM (Node Version Manager) because I couldn't run methods in my gu
 
 So NVM is used to manage and switch between multiple installations of node. I needed an older version of node to run my gulpfile method which using this could easily do without losing my current install.
 
-```javascript
+``` javascript
 // This is roughly what my gulp method looked like to minify an array of scripts
 gulp.task("myGulpMethod", function () {
 	return gulp.src(arrayOfJsScripts)
@@ -79,14 +86,14 @@ gulp.task("myGulpMethod", function () {
 
 Manually running the gulp task in the directory containing the gulpfile.
 
-```bash
+``` bash
 WORKING_DIRECTORY> gulp myGulpMethod
     ReferenceError: primordials is not defined.
 ```
 
 This when run in the console gives the error above. So using NVM, this is how I fixed it.
 
-```bash
+``` bash
 # After installing NVM from the GitHub page
 > nvm list
 > nvm install 8.11.1
@@ -110,4 +117,5 @@ Bundle code modules with dependencies into static assets that can be called from
 - [x] Make a contents page
 - [x] Add Gulp for an intial commit
 - [x] Work out how to manage and split out this page (hierarchy)
-- [ ] Add Git section
+- [ ] Git
+- [x] Source Maps
