@@ -13,6 +13,7 @@ Compilation of some notes I've made, for all the tech stuff I want to come back 
         2. [Ulify](#uglify)
         3. [Jasmin](#jasmine)
         4. [Modernizr](#modernizr)
+		5. [Aphrodite](#aphrodite)
     2. [Markdown](#markdown)
 3. [Software](#software)
     1. [NVM](#nvm)
@@ -40,7 +41,7 @@ Async (asynchronous) communication is the transmission of data intermittently ra
 
 Sources of async:
 
-- Network I/O 
+- Network I/O
     - Making HTTP requests (e.g. GET or POST methods)
 - Disk I/O
     - Reading or writing to a local file on a physical medium (e.g. A .txt file on your C: drive)
@@ -70,6 +71,10 @@ Jasmine is a behaviour driven, open-source testing framework that aims to run on
 ### [Modernizr](https://modernizr.com/) <a name="modernizr"></a>
 
 When used, Modernizr runs some quick tests when your web page loads to see which features the current users browser can run.
+
+### [Aphrodite](https://github.com/Khan/aphrodite) <a name=aphrodite"></a>
+
+*Framework-agnostic CSS-in-JS with support for server-side rendering, browser prefixing, and minimum CSS generation.*
 
 ## [Markdown](https://en.wikipedia.org/wiki/Markdown) <a name="markdown"></a>
 
@@ -141,7 +146,7 @@ console.log('Hello, World!');
 ```
 
 ``` bash
-# ls (unix) or dir (windows) to list files in directory 
+# ls (unix) or dir (windows) to list files in directory
 > ls
     HelloWorld.js
 
